@@ -21,7 +21,7 @@ function EmailListMain() {
 
   const fetchEmails = async () => {
     try {
-      const response = await axios.get(`http://localhost:5000/api/emails/recipient/${currentUser.email}`);
+      const response = await axios.get(`https://mocdt-backend-task-x5ie.vercel.app/api/emails/recipient/${currentUser.email}`);
       setEmails(response.data);
     } catch (error) {
       console.error('Error fetching emails:', error);
@@ -32,7 +32,7 @@ function EmailListMain() {
 
   const handleSearch = async () => {
     try {
-      const response = await axios.get(`http://localhost:5000/api/emails/search/by-sender/${searchQuery}`);
+      const response = await axios.get(`https://mocdt-backend-task-x5ie.vercel.app/api/emails/search/by-sender/${searchQuery}`);
       setSearchResults(response.data);
     } catch (error) {
       console.error('Error searching emails:', error);

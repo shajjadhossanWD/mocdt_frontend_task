@@ -19,7 +19,7 @@ function RegistrationForm() {
 
   const handleRegister = async () => {
     try {
-      const response = await axios.post('http://localhost:5000/api/v1/user/signup', {
+      const response = await axios.post('https://mocdt-backend-task-x5ie.vercel.app/api/v1/user/signup', {
         name,
         email,
         password,

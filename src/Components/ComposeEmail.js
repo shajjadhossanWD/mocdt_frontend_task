@@ -20,7 +20,7 @@ function ComposeEmail() {
         subject,
         body
       };
-      await axios.post('http://localhost:5000/api/emails/send-email', emailData, config);
+      await axios.post('https://mocdt-backend-task-x5ie.vercel.app/api/emails/send-email', emailData, config);
       
       console.log('Email sent successfully');
       alert("Email sent successfully");

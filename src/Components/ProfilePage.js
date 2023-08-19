@@ -19,7 +19,7 @@ function ProfilePage () {
           Authorization: `Bearer ${token}`, 
         },
       };
-      await axios.put('http://localhost:5000/api/v1/user/update-imap-password', { imapPassword }, config);
+      await axios.put('https://mocdt-backend-task-x5ie.vercel.app/api/v1/user/update-imap-password', { imapPassword }, config);
       alert('IMAP password updated successfully');
       navigate("/");
     } catch (error) {

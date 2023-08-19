@@ -19,7 +19,7 @@ function EmailView() {
 
   const fetchEmail = async () => {
     try {
-      const response = await axios.get(`http://localhost:5000/api/emails/${id}`);
+      const response = await axios.get(`https://mocdt-backend-task-x5ie.vercel.app/api/emails/${id}`);
       setEmail(response.data);
     } catch (error) {
       console.error('Error fetching email:', error);
@@ -28,7 +28,7 @@ function EmailView() {
 
   const handleDeleteEmail = async () => {
     try {
-      await axios.delete(`http://localhost:5000/api/emails/${id}`);
+      await axios.delete(`https://mocdt-backend-task-x5ie.vercel.app/api/emails/${id}`);
       navigate('/'); 
     } catch (error) {
       console.error('Error deleting email:', error);
@@ -60,7 +60,7 @@ function EmailView() {
         Authorization: `Bearer ${authToken}`,
       };
   
-      await axios.post(`http://localhost:5000/api/emails/reply/${id}`, {
+      await axios.post(`https://mocdt-backend-task-x5ie.vercel.app/api/emails/reply/${id}`, {
         body: replyData.text
       }, { headers });
   

@@ -16,7 +16,7 @@ export const AuthProvider = ({ children }) => {
       if (localStorage.getItem("emailapp")) {
         axios
           .get(
-            "http://localhost:5000/api/v1/user/current-user",
+            "https://mocdt-backend-task-x5ie.vercel.app/api/v1/user/current-user",
             {
               headers: {
                 authorization: `Bearer ${localStorage.getItem("emailapp")}`,
