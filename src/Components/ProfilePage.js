@@ -48,8 +48,9 @@ function ProfilePage () {
         />
         <button className='btn btn-info' onClick={handleImapPasswordUpdate}>UPDATE</button>
       </p>
-      <Link to="/"><button className='btn btn-primary ms-2'>BACK TO HOME</button></Link>
-
+      <Link to="/"><button className='btn btn-primary ms-2 mb-2'>BACK TO HOME</button></Link>
+      <p>For send mail from your email address to anyothers email address you must have to put your IMAP password</p>
+      <p>Here I'm providing the guidence, <a href="https://youtu.be/xKileDyDAeo" target='_any'>CLICK HERE</a> for watch video.</p>
       </div>
     </div>
   );
