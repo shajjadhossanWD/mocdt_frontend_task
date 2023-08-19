@@ -1,0 +1,64 @@
+.background {
+    background: radial-gradient(circle at 50% 50%,
+            rgba(255, 255, 0, 1) 0%,
+            rgba(30, 37, 117, 1) 0%,
+            rgba(14, 15, 46, 1) 100%);
+
+}
+
+
+#handboy {
+    animation: swing ease-in-out 1.3s infinite alternate;
+    transform-origin: 98% 98%;
+    transform-box: fill-box;
+
+}
+
+
+#girllight {
+    animation: swing ease-in-out 1.3s infinite alternate;
+    transform-origin: 0% 97%;
+    transform-box: fill-box;
+}
+
+#hairgirl {
+    animation: swinghair ease-in-out 1.3s infinite alternate;
+    transform-origin: 60% 0%;
+    transform-box: fill-box;
+
+}
+
+#zero {
+    transform-origin: bottom;
+    transform-box: fill-box;
+
+}
+
+/*************swing************/
+@keyframes swing {
+    0% {
+        transform: rotate(10deg);
+    }
+
+    100% {
+        transform: rotate(-10deg);
+    }
+}
+
+
+/*************swing hair************/
+@keyframes swinghair {
+    0% {
+        transform: rotate(6deg);
+    }
+
+    100% {
+        transform: rotate(-6deg);
+    }
+}
+
+@media only screen and (max-width : 425px) {
+    .background {
+        height: 100vh;
+    }
+}
