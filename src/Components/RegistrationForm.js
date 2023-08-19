@@ -87,6 +87,9 @@ function RegistrationForm() {
       <p>
         Already have an account? <Link to="/login">Click here</Link> to login.
       </p>
+
+      <p>For send mail from your email address to anyothers email address you must have to put your IMAP password</p>
+      <p>Here I'm providing the guidence, <a href="https://youtu.be/xKileDyDAeo" target='_any'>CLICK HERE</a> for watch video.</p>
       </div>
     </div>
   );
